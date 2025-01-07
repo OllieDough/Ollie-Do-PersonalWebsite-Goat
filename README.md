@@ -1,5 +1,8 @@
 ## AWS Amplify Next.js (App Router) Starter Template
 
+https://docs.amplify.aws/nextjs/start/quickstart/nextjs-app-router-client-components/
+
+This is Gen 2
 This repository provides a starter template for creating applications using Next.js (App Router) and AWS Amplify, emphasizing easy setup for authentication, API, and database capabilities.
 
 ## Overview
@@ -23,3 +26,14 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
+
+
+
+#in order to start use npm run dev
+
+
+
+
+For fun account access sign in:
+Oliver9324@gmail.com
+Abc12345@
