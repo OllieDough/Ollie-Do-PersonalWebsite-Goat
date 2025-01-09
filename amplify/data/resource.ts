@@ -11,20 +11,29 @@ const schema = a.schema({
     .model({
       content: a.string(),
     })
-    .authorization((allow) => [allow.publicApiKey()]),
+    .authorization((allow: { owner: () => any; }) => [allow.owner()]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
 
+//this makes it that every user has their own db
 export const data = defineData({
   schema,
   authorizationModes: {
-    defaultAuthorizationMode: "apiKey",
-    apiKeyAuthorizationMode: {
-      expiresInDays: 30,
-    },
+    defaultAuthorizationMode: 'userPool',
   },
 });
+
+//This makes it that all user has access to same db
+// export const data = defineData({
+//   schema,
+//   authorizationModes: {
+//     defaultAuthorizationMode: "apiKey",
+//     apiKeyAuthorizationMode: {
+//       expiresInDays: 30,
+//     },
+//   },
+// });
 
 /*== STEP 2 ===============================================================
 Go to your frontend source code. From your client-side code, generate a

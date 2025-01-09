@@ -1,5 +1,8 @@
 ## AWS Amplify Next.js (App Router) Starter Template
 
+Notes-This is based in US-West-1
+App is called Ollie-Do-PersonalWebsite-Goat
+
 https://docs.amplify.aws/nextjs/start/quickstart/nextjs-app-router-client-components/
 
 This is Gen 2
@@ -29,7 +32,10 @@ This library is licensed under the MIT-0 License. See the LICENSE file.
 
 
 
-#in order to start use npm run dev
+#in order to start use npm run dev(this takes 5 mins to start due to sandbox)
+#to use sandbox mode:(it takes about 5 min to start)(run it cocurrently)
+#this will seperate you from the production code, and you will restart it over in terms of your data
+    npx ampx sandbox
 
 
 
